@@ -1,4 +1,4 @@
-package com.tomnieuwland.beginnings;
+package basics;
 
 // The humble hello world
 public class HelloWorld {

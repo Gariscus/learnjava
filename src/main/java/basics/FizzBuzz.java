@@ -1,4 +1,4 @@
-package com.tomnieuwland.beginnings;
+package basics;
 
 // Fizzbuzz with no user input
 public class FizzBuzz {
