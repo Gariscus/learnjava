@@ -23,4 +23,24 @@ public class Sort {
         } while (!sorted);
         return arr;
     }
+    public static int[] bogoSort(int[] arr){
+        do{
+            for(int i = 0; i < arr.length -1; i++){
+                int rndArrIdx1 = (int)(Math.random() * arr.length);
+                int rndArrIdx2 = (int)(Math.random() * arr.length);
+                int temp = arr[random1];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+            }
+        }while (!isSorted(arr));
+        return arr;
+    }
+
+     public static boolean isSorted(int[] arr){
+        for(int i = 0; i < arr.length -1; i++){
+            if(i != arr.length -1 && arr[i] > arr[i+1]) 
+            return false;
+        }
+        return true;
+    }
 }
