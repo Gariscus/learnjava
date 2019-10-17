@@ -6,7 +6,7 @@ public class Sort {
     public static int[] bubbleSort(int[] arr){
         boolean sorted = false;
 
-        if (arr.length == 1 || arr.length == 0){
+        if (arr.length < 2){
             return arr;
         }
 
